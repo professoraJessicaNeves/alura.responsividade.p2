@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<!-- Declaração do tipo de documento HTML -->
+
+<head>
+  <!-- Cabeçalho do documento, onde são incluídas informações de metadados e links externos -->
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura o viewport para responsividade em dispositivos móveis -->
+  <title>AluraBooks</title>
+  <!-- Define o título da página que aparece na aba do navegador -->
+  <link rel="stylesheet" href="reset.css">
+  <!-- Importa um arquivo de CSS para redefinir estilos padrão -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Estabelece conexão antecipada com o domínio de fontes do Google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Conexão antecipada com outro domínio necessário para fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Importa a fonte "Poppins" do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Importa a fonte "Josefin Sans" do Google Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Estilos necessários para o carrossel Swiper -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Importa o arquivo principal de estilos da página -->
+</head>
+
+<body>
+  <!-- Corpo do documento, onde todo o conteúdo visível é estruturado -->
+  <header class="cabeçalho">
+    <!-- Cabeçalho principal da página -->
+    <div class="container">
+      <!-- Contêiner que agrupa elementos do cabeçalho -->
+      <input type="checkbox" id="menu" class="container__botao">
+      <!-- Caixa de seleção usada para controlar o menu hambúrguer -->
+      <label for="menu" class="container__rotulo">
+        <!-- Rótulo associado ao checkbox acima -->
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+        <!-- Ícone de menu hambúrguer -->
+      </label>
+      <ul class="lista-menu">
+        <!-- Lista de navegação principal do menu -->
+        <li class="lista-menu__titulo">Categorias</li>
+        <!-- Título do menu -->
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+          <!-- Link para a categoria Programação -->
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+          <!-- Link para a categoria Front-end -->
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+          <!-- Link para a categoria Infraestrutura -->
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+          <!-- Link para a categoria Business -->
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+          <!-- Link para a categoria Design & UX -->
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+      <!-- Logo do site -->
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
+      <!-- Título do site com parte destacada -->
+      
+      <!-- Navegação secundária para usuários -->
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <!-- Checkbox para controlar o submenu -->
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+          <!-- Título do submenu -->
+        </label>
+        <ul class="lista-menu">
+          <!-- Repetição das categorias no submenu -->
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Programação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Front-end</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Infraestrutura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Business</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Design & UX</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <!-- Link para página de favoritos -->
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        <!-- Link para página da estante -->
+      </ul>
+    </div>
+
+    <!-- Ícones de navegação adicionais -->
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <!-- Ícone de favoritos -->
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+        <!-- Texto do botão "Minha sacola" -->
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+        <!-- Texto do botão "Meu perfil" -->
+      </a>
+    </div>
+  </header>
+
+  <!-- Seções adicionais omitidas por limitações de espaço -->
+</body>
+</html>
+<!-- Encerramento do documento HTML -->
